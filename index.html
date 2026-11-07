@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tiny Lobby · juegos cortos de historias en el navegador</title>
+<meta name="description" content="Tiny Lobby es un estudio indie de juegos cortos de historias que se juegan gratis en el navegador: La Abuela (eres la abuela y te llama un estafador) y Night Desk (misterio noir en la recepción de un hotel).">
+<link rel="canonical" href="https://tinylobbygames.github.io/">
+<link rel="alternate" hreflang="es" href="https://tinylobbygames.github.io/">
+<link rel="alternate" hreflang="en" href="https://tinylobbygames.github.io/#en">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tiny Lobby">
+<meta property="og:title" content="Tiny Lobby · juegos cortos de historias">
+<meta property="og:description" content="La Abuela: eres la abuela y te llama un estafador. Night Desk: misterio noir en un hotel de noche. Gratis, en el navegador.">
+<meta property="og:url" content="https://tinylobbygames.github.io/">
+<meta property="og:image" content="https://tinylobbygames.github.io/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="la-abuela.jpg">
+<meta name="theme-color" content="#0e0b12">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://tinylobbygames.github.io/#org",
+      "name": "Tiny Lobby",
+      "url": "https://tinylobbygames.github.io/",
+      "logo": "https://tinylobbygames.github.io/la-abuela.jpg",
+      "description": "Indie studio making short story games you play in the browser.",
+      "email": "tinylobby@proton.me",
+      "sameAs": [
+        "https://tinylobby.itch.io",
+        "https://www.youtube.com/@tinylobbygames",
+        "https://gamejolt.com/@tinylobbygames",
+        "https://ifdb.org/viewgame?id=mh39pq2d7pqusb6k",
+        "https://ifdb.org/viewgame?id=nt594rdr9szdukef"
+      ]
+    },
+    {
+      "@type": "VideoGame",
+      "name": "La Abuela",
+      "url": "https://tinylobby.itch.io/la-abuela",
+      "image": "https://tinylobbygames.github.io/la-abuela.jpg",
+      "description": "Juego gratis en el navegador: eres la abuela y te llama un estafador. Llamadas con voces y varios finales.",
+      "inLanguage": ["es", "en", "uk"],
+      "genre": ["Interactive fiction", "Comedy"],
+      "gamePlatform": ["Web browser", "Mobile"],
+      "playMode": "SinglePlayer",
+      "isAccessibleForFree": true,
+      "author": {"@id": "https://tinylobbygames.github.io/#org"}
+    },
+    {
+      "@type": "VideoGame",
+      "name": "Night Desk",
+      "url": "https://tinylobby.itch.io/night-desk",
+      "image": "https://tinylobbygames.github.io/night-desk.jpg",
+      "description": "Free noir interactive fiction in the browser: you are the night clerk of a small hotel. Six nights, 48 endings.",
+      "inLanguage": ["en", "es", "uk"],
+      "genre": ["Interactive fiction", "Mystery", "Noir"],
+      "gamePlatform": ["Web browser", "Mobile"],
+      "playMode": "SinglePlayer",
+      "isAccessibleForFree": true,
+      "contentRating": "16+",
+      "author": {"@id": "https://tinylobbygames.github.io/#org"}
+    }
+  ]
+}
+</script>
+<style>
+  :root { --neon: #ff5c8a; --amber: #f2b34c; --bg: #0e0b12; --panel: #1a141f; --ink: #f5f0f6; --muted: #9a8fa3; --line: #2a2130; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 40px 20px 64px; }
+  header { text-align: center; margin-bottom: 40px; }
+  .brand { font-family: "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, monospace; letter-spacing: 6px; color: var(--neon); font-size: 34px; margin: 0; }
+  .tag { color: var(--muted); margin: 10px 0 0; }
+  .lang { font-size: 14px; color: var(--muted); margin-top: 14px; }
+  .lang a { color: var(--amber); }
+  h2 { font-size: 15px; letter-spacing: 3px; text-transform: uppercase; color: var(--amber); margin: 36px 0 14px; font-weight: 600; }
+  .game { display: grid; grid-template-columns: 220px 1fr; gap: 20px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 18px; margin-bottom: 18px; }
+  .game img { width: 100%; height: auto; border-radius: 8px; display: block; }
+  .game h3 { margin: 0 0 6px; font-size: 22px; }
+  .game p { margin: 0 0 8px; }
+  .meta { color: var(--muted); font-size: 14px; }
+  .btn { display: inline-block; margin: 8px 8px 0 0; padding: 8px 14px; border: 1px solid var(--amber); border-radius: 8px; color: var(--amber); text-decoration: none; font-weight: 600; }
+  .btn.play { background: var(--amber); color: #1a1208; }
+  a { color: var(--neon); }
+  .links { display: grid; gap: 6px; }
+  footer { margin-top: 40px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding-top: 16px; }
+  @media (max-width: 600px) { .game { grid-template-columns: 1fr; } .brand { font-size: 26px; letter-spacing: 4px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1 class="brand">TINY LOBBY</h1>
+  <p class="tag">Juegos cortos de historias. Gratis, en el navegador, en el móvil o en el ordenador.</p>
+  <p class="lang"><a href="#en">English below</a></p>
+</header>
+
+<h2>Juegos</h2>
+
+<article class="game" id="la-abuela">
+  <a href="https://tinylobby.itch.io/la-abuela"><img src="la-abuela.jpg" alt="La Abuela: la abuela con el teléfono en la mano" width="630" height="500"></a>
+  <div>
+    <h3>La Abuela</h3>
+    <p>Suena el teléfono. Al otro lado, «tu nieto» en apuros. Luego un abogado. Luego un inspector. Tú eres la abuela, y tu trabajo es no colgar: escucha, elige qué contestar y pilla al estafador en su propia mentira.</p>
+    <p class="meta">Comedia · llamadas con voces · varios finales · unos 3 minutos por llamada · español, inglés y ucraniano · sin registro</p>
+    <a class="btn play" href="https://tinylobby.itch.io/la-abuela">Jugar gratis en itch.io</a>
+    <a class="btn" href="https://tinylobbygames.github.io/noche/abuela/">Jugar aquí (espejo)</a>
+    <a class="btn" href="https://www.youtube.com/@tinylobbygames">Ver las llamadas en YouTube</a>
+  </div>
+</article>
+
+<article class="game" id="night-desk">
+  <a href="https://tinylobby.itch.io/night-desk"><img src="night-desk.jpg" alt="Night Desk: la recepción de un hotel pequeño de noche, bajo la lluvia" width="1200" height="685"></a>
+  <div>
+    <h3>Night Desk</h3>
+    <p>Eres el recepcionista de noche de un hotel pequeño. Una mujer de gris deja un sobre y doscientos dólares por un favor: si alguien pregunta, ella nunca estuvo aquí. Seis noches, y cada respuesta se recuerda.</p>
+    <p class="meta">Misterio noir · 16+ · 6 noches, 48 finales · 15–25 minutos por noche · voces en inglés y español; texto en inglés, español y ucraniano</p>
+    <a class="btn play" href="https://tinylobby.itch.io/night-desk">Jugar gratis en itch.io</a>
+    <a class="btn" href="https://tinylobbygames.github.io/noche/">Jugar aquí (espejo)</a>
+  </div>
+</article>
+
+<h2>Dónde encontrarnos</h2>
+<div class="links">
+  <a href="https://tinylobby.itch.io">itch.io: tinylobby.itch.io</a>
+  <a href="https://www.youtube.com/@tinylobbygames">YouTube: @tinylobbygames · La Abuela contra los estafadores</a>
+  <a href="https://gamejolt.com/games/la-abuela/1115925">Game Jolt: La Abuela</a>
+  <a href="https://ifdb.org/viewgame?id=mh39pq2d7pqusb6k">IFDB: La Abuela</a>
+  <a href="https://ifdb.org/viewgame?id=nt594rdr9szdukef">IFDB: Night Desk</a>
+  <a href="mailto:tinylobby@proton.me">Contacto: tinylobby@proton.me</a>
+</div>
+
+<h2 id="en">English</h2>
+<p><strong>Tiny Lobby</strong> is an indie studio making short story games you play free in the browser, on a phone or a desktop.</p>
+<p><strong>La Abuela</strong>: you're the grandma, and a scammer is calling: first "your grandson", then a lawyer, then an inspector. Your job is not to hang up. Listen, pick your answers and catch him in his own lie. Spanish comedy with voiced calls and several endings; also in English and Ukrainian. <a href="https://tinylobby.itch.io/la-abuela">Play on itch.io</a>.</p>
+<p><strong>Night Desk</strong>: a free noir interactive fiction. You are the night clerk of a small hotel; a woman in grey leaves an envelope and two hundred dollars for a favour. Six nights, 48 endings, 15–25 minutes a night, 16+. Voiced in English and Spanish; text in English, Spanish and Ukrainian. <a href="https://tinylobby.itch.io/night-desk">Play on itch.io</a>.</p>
+
+<footer>
+  <p>Tiny Lobby · 2026. Los juegos usan arte, voces y música hechos con herramientas de IA; las historias están escritas por el estudio con ayuda de IA. · The games use AI-made art, voices and music; the stories are written by the studio with AI help.</p>
+</footer>
+</div>
+</body>
+</html>

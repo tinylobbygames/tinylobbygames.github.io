@@ -1,0 +1,22 @@
+# Tiny Lobby
+
+> Indie studio making short story games you play free in the browser (phone or desktop). Two games: La Abuela (Spanish comedy: you're the grandma and a scammer is calling) and Night Desk (noir interactive fiction: you're a hotel night clerk). Text in Spanish, English and Ukrainian.
+
+## Games
+
+- [La Abuela](https://tinylobby.itch.io/la-abuela): free browser game, about 3 minutes per call. You're the grandma; "your grandson", a lawyer and an inspector call to scam you. Your job is not to hang up: pick your answers and catch the scammer in his own lie. Voiced calls, several endings. Spanish first; also English and Ukrainian. Mirror: https://tinylobbygames.github.io/noche/abuela/
+- [Night Desk](https://tinylobby.itch.io/night-desk): free noir interactive fiction, 16+. You are the night clerk of a small hotel; a woman in grey leaves an envelope and $200 for a favour. Six nights, 48 endings, 15–25 minutes a night. Voiced in English and Spanish; text in English, Spanish and Ukrainian. Mirror: https://tinylobbygames.github.io/noche/
+
+## Links
+
+- [itch.io studio page](https://tinylobby.itch.io)
+- [YouTube: La Abuela contra los estafadores (Shorts)](https://www.youtube.com/@tinylobbygames)
+- [Game Jolt: La Abuela](https://gamejolt.com/games/la-abuela/1115925)
+- [IFDB: La Abuela](https://ifdb.org/viewgame?id=mh39pq2d7pqusb6k)
+- [IFDB: Night Desk](https://ifdb.org/viewgame?id=nt594rdr9szdukef)
+- Contact: tinylobby@proton.me
+
+## Notes
+
+- Both games are free and need no account.
+- Art, voices and music are made with AI tools; the stories are written by the studio with AI help.
